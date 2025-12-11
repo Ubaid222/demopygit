@@ -19,7 +19,7 @@ print(f"\nAttempting login with username: {username}")
 if login(username, password):
     print("✓ Login successful!")
 else:
-    print("✗ Login failed! Username too short.")
+    print("✗ Login failed! (Invalid credentials)")
 
 # Demo failed login - short password
 username = "user123"
@@ -28,7 +28,7 @@ print(f"\nAttempting login with username: {username}")
 if login(username, password):
     print("✓ Login successful!")
 else:
-    print("✗ Login failed! Password too short.")
+    print("✗ Login failed! (Invalid credentials)")
 
 # Demo validation functions
 print("\n--- Validation Demo ---")

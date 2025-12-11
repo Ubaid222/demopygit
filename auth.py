@@ -13,16 +13,15 @@ def login(username, password):
     Returns:
         bool: True if login is successful, False otherwise
     """
-    # Simple validation - check if username and password are provided
-    if not username or not password:
+    # Use existing validation functions to reduce duplication
+    if not validate_username(username):
         return False
     
-    # For demo purposes, accept any non-empty username and password
-    # In a real application, this would check against a database
-    if len(username) >= 3 and len(password) >= 6:
-        return True
+    if not validate_password(password):
+        return False
     
-    return False
+    # In a real application, this would check against a database
+    return True
 
 
 def validate_username(username):
