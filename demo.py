@@ -9,6 +9,6 @@ if __name__ == "__main__":
     greet_user()
     
     # Greet with custom name
-    user_name = input("\nWhat's your name? ")
+    user_name = input("\nWhat's your name? ").strip()
     if user_name:
         greet_user(user_name)
